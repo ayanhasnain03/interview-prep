@@ -1,0 +1,130 @@
+
+🚀 Understanding JavaScript and Its Engines 🚀
+
+Q1: What is JavaScript?
+JavaScript is a programming language used to convert static web pages into interactive and dynamic web pages! 🌟
+
+Q2: What is the role of a JavaScript engine?
+A JavaScript engine is a program present in web browsers that executes JavaScript code, making your web experience seamless and interactive.
+
+Here’s a quick rundown of JavaScript engines across popular browsers:
+
+Chrome: V8 Engine 🔥
+Safari: Core JavaScript 🍏
+Firefox: SpiderMonkey 🕷️
+Edge: Chakra ⚡
+Dive into the world of JavaScript and discover how these engines power your web experience! 🌐💻 #JavaScript #WebDevelopment #TechInsights #Coding
+
+
+Q: What are Client-side and Server-side?
+
+A client is a device, application, or software component that requests and consumes services or resources from a server. 📱💻
+A server is a device, computer, or software application that provides services, resources, or functions to clients. 🖥️🗄️
+
+
+
+Q: What are Variables? What is the difference between `var`, `let`, and `const`?
+
+Variables are used to store data. 📊
+
+// var num=2;
+
+`var` creates function-scoped variables. 🏠
+`let` creates block-scoped variables. 📦
+`const` can be assigned only once, and its value cannot be changed afterward. 🔒
+
+
+Q: What are some important string operations in JavaScript?
+
+String operations in JavaScript include:
+
+Concatenation: Combining strings using + or concat(). ➕
+
+Length: Getting the length of a string using .length. 📏
+
+Indexing: Accessing characters using bracket notation, e.g., str[0]. 🔢
+
+Substring: Extracting parts of a string using substring(), substr(), or slice(). ✂️
+
+Search: Finding substrings with indexOf(), lastIndexOf(), includes(), startsWith(), and endsWith(). 🔍
+
+Replace: Replacing parts of a string using replace() or replaceAll(). 🔄
+
+Case Conversion: Changing case with toUpperCase() and toLowerCase(). 🔠🔡
+
+Trim: Removing whitespace with trim(), trimStart(), and trimEnd(). ✂️
+
+Split: Splitting a string into an array with split(). 🍴
+
+Q-What is DOM? What is difference between HTMLcand DOM?
+
+==> The DOM (Document Object Model) represents the web page as a tree-like structure that allows JavaScript to dynamically access and manipulate the content and structure of web page
+
+
+Q- What are Selectors in JavaScript?
+
+==> Dome Selector Method-
+-getElementById()
+-getElementByClassname()
+-getElementByTagName()
+querySelector()
+querySelectorAll()
+
+
+Q- what is DataType In Js?
+
+*There are two types of Data-
+=>primitive and Non primitive
+
+//On primitive
+1.Number 2.String 3.Booleans 4.Undefined 5.null
+
+//On non-primitive
+1.Object 2.Array 3.Function 4.Date 5.RegExp
+
+
+Q-What Are operators ? What are the types of operators in js?
+=> operators are symbols or keywords used to perform operations on operands
+
+
+==> Type Of operators
+1.Arithmetic Operators 2.Assignment Operators 3.Comparison Operators 4.Logical Operators 5.String Operators
+
+
+
+1.ARITHEMETIC- `+` , `-` , `*` , `/` , `%`
+
+2.ASSIGNMENT- `=` ,`+=` , `*=`
+
+3.COMPARISON- `>` ,`<` , `>=` , `<=` , `===` , `!==`
+
+4.Logical- `&&` ,`||` 
+
+4.String Operators- `+`
+
+
+Q-What are the Types of conditions statements in JS?
+
+===> 1.if/else statement
+
+if(1>5){ //false
+console.log("true")
+}else{
+console.log("false")
+}
+===> 2.Ternary operators
+let a = 1 > 5 ? "true" : "false"
+===> 3.Switch statement
+ let a =5
+ switch(a){
+    case:1
+console.log("1");
+break;
+case:5:
+console.log("2")
+break;
+
+default:
+console.log("3")
+ }
+ //output-2
