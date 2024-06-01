@@ -130,3 +130,109 @@ default:
 console.log("3")
  }
  //output-2
+
+
+
+Date-1/6/2024
+
+ Q-What is loop? What are the types of loops in JS?
+
+ =>A loop is a programming way to run a piece of code repeatedly unit a certain condition is met.
+
+
+ JAVASCRIPT-LOOPS 
+ -----> 
+ 1.For loop
+ 2.While loop
+ 3.do-while loop
+ 4.for...of loop
+ 5.for...in loop
+
+
+ Q- What are functions in JS? What are the types of functions?
+
+ =>A function is a reuseable block of code that performs a specific task.
+
+
+
+ => TYpes of function
+ 1.Named functions
+ 2.Anonymous function
+ 3.Function Expression
+ 4.Arrow Function
+ 5.IIFE
+ 6.Callback Function
+ 7.Higher order function
+
+
+
+ Q-What are Arrow Functions in Js? What is it use?
+
+ => Arrow function also known as fat arrow functions is a simpler and shorter way for defining functions in JavaScript.
+
+
+ Q- What are Array is Js? How to get,add & remove elements from arrays?
+
+ => An array is a data that allows yo to store multiple values in a single variable.
+
+
+ Q- What are Objects in JavaScript?
+
+
+ =>An Object is data type that allows you to store key-value pairs
+
+ let object1 = {
+    name:"Ayan",
+    favColor:["red","white","green"]
+ }
+ console.log(object1.name) //output->Ayan
+
+
+
+ Q- What is Scope in JavaScript?
+
+==> Scope determine where variables are defined and where they can be accessed
+
+ 1. Global Scope -> accessible anywhere
+
+ 2.Function -> accessible inside function only
+
+ 3.Block Scope->accessible inside block
+
+
+
+
+ Q- What is Hoisting in Js?
+
+==> Hoisting is a JavaScript behaviour where Functions and variable declearations are moved to the top of their respective scopes during the compilation phase
+
+
+//Function hoisting
+myFunc()
+function myFunc(){
+    console.log("HEllo World)
+}
+//output:Hello
+
+
+
+Q- What is Errorhandling in Js?
+
+
+
+//try block contains the code that might throw an error
+try{
+
+}
+//catch block is where the error is handeld
+catch(error){
+
+}
+
+
+Q- What is Asynchronous programming in Js?
+
+
+==> Asynchronous programming allows multiple tasks or operations to be initialised and excuted concurrently.
+
+==> Asynchronous operations do not block the execution of the code
