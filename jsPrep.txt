@@ -236,3 +236,84 @@ Q- What is Asynchronous programming in Js?
 ==> Asynchronous programming allows multiple tasks or operations to be initialised and excuted concurrently.
 
 ==> Asynchronous operations do not block the execution of the code
+
+
+
+Date-2/6/2024
+
+Variables And Datatypes
+
+Q- What is the primitive or non-primitive data type in JS?
+
+=> primitive -
+
+*primitive DataType can holdonly single value;
+*primitive DataType are immutable meaning they cannot be changed
+
+Eg- Numbers, Strings, Booleans, Null, Undefined, Symbols
+
+=> non-primitive-
+non-primitive DataType can hold multiple values
+they are mutable and can be changed
+Eg- Arrays, Objects, Functions, Dates, RegExps
+
+
+
+Q- What is the difference between null and undefined?
+
+=> undefined: When a variable is decleared but not assigned a value.
+
+eg:
+let undefinedVariable;
+
+undefinedVariable = undefined;
+
+console.log(undefinedVariable);
+
+output: undefined;
+
+=> undefined can be used when you dont have the value right now, but you will get it after 
+some logic operation.
+
+
+
+=> null: null variables are intentionally assigned the null value.
+
+* Null can be used when you are sure you do not have any value for the particular variable.
+
+
+
+Q- What Use Of typeOf Operator? What is it used for?
+
+=> typeOf operator is used to find the type of a variable
+
+=> Real application use > typeOf operator can be used to validate the data received from external sources(api)
+
+
+let num =42;
+let str = "hello World";
+let bool = true;
+
+console.log(typeof num); output: number
+console.log(typeof str); output: string
+console.log(typeof bool); output: boolean
+
+
+Q- What Is Type Coercion in Js?
+
+=> Type coercion is the automatic conversion of one data type to another during certain operations or Comparisons.
+
+
+let str = "42";
+let num = 42;
+console.log(str + num); output: 4242
+
+let bool = true
+console.log(num + bool); output:43
+
+Q- Use Of TypeCoercion In JS?
+ --> TypeCoercion is used during string and number concatenation.
+
+ -->Type coercion can be used while useing Comparison operators.
+
+ 
