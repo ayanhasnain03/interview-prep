@@ -317,3 +317,292 @@ Q- Use Of TypeCoercion In JS?
  -->Type coercion can be used while useing Comparison operators.
 
  
+ Date-7/6/2024
+
+ Q- what is diffrent between uniary , binary and ternary operator?
+
+
+ => Unary Eg- +, -, !, ~, ++, --
+ => Binary Eg- +, -, *, /, %, **, <<, >>, &, |, ^, &&
+ =>ternary Eg- ?:
+
+
+
+ Q- Short-circuit evaluation in js?
+
+
+
+==> Short-circuit evaluation stops the execution as soon as the result can be determined withought evaluating the remaining sub Expressions
+
+
+ //Short circuit evaluation with logical AND
+
+
+let result1 = false && someFunction();
+console.log(result1); //false 
+
+//Short-circuit evaluation with logical OR
+
+let result2 = false || someFunction();
+console.log(result2); //false
+
+Q- What is operator preedence in js?
+
+
+==> As per operator preedence,operators with Higher precedence are evaluated first.
+
+==> Following BODMAS rule
+let a=6;
+let b=3;
+let c = 2;
+
+let resullt = a + b * c + (a-b);
+
+console.log(result);
+
+
+
+Q- When to use wich type of conditional statement in  real applications?
+
+==> 1. If ... else: for complex,diffrent & multiline execution.
+
+==> benefit: Cover all scenarios.
+
+eg :
+ const age = 25;
+if(age > 18){
+console.log("Adult");
+}else if(age > 12){
+console.log("Teenager");
+}else{
+console.log("Child");
+}
+
+
+
+2.Ternary operator: for single line execution.
+const isUser = true;
+- benefit : short one line syntax
+eg:-
+isUser ? console.log("User") : console.log("Guest");
+
+
+3. Switch statement
+
+==> switch statement is used to perform different actions based on different conditions.
+
+
+
+
+
+const dayofWeek = "tuesday"
+ switch(a){
+    case:"Monday"
+    console.log("Start");
+    break;
+    case:"tuesday"
+    case:"Sunday"
+    console.log("weekend");
+    break;
+    default
+    console.log("default");
+ }
+ output: tuesday
+
+
+
+ Q- what is difference between == and === in js?
+
+*Loose equality (==) operator compares two values for equally after performing type coercion. 
+==> loose equality
+console.log(1 == "1"); //true
+
+
+
+
+
+==> strict equality(===) operator compares two values for equality without performing type coercion.
+console.log(1 === "1"); //false
+
+Q- What is the differnce between spread and Rest operator in js?
+
+==> Spread Operator Examples
+const array =[1,2,3];
+
+console.log(...array); //1,2,3
+
+
+==> use of spread operator
+1.Copying Array,
+2. passing multiple Arguments to a function,
+3. Merging Arrays
+
+
+
+eg- copying array
+const orriginalArray = [1, 2, 3];
+
+const copiedArray = [...originalArray];
+
+console.log(copiedArray); // [1, 2, 3]
+
+
+eg: Merging arrays
+
+const array1 = [1, 2, 3];
+
+const array2 = [4, 5, 6];
+
+const mergedArray = [...array1, ...array2];
+
+console.log(mergedArray); // [1, 2, 3, 4, 5, 6]
+
+
+eg:Passing multiple Arguments to a function
+const number = [1,2, 3,4,5];
+
+ sum = (...number) ;
+
+function sum(a,b,c,d,e){
+    console.log(a+b+c+d+e);
+    //output:15
+}
+
+
+
+//Rest operator
+
+
+
+==>The Rest operator is used in function parameters to collect the remaining arguments into an array.
+
+
+
+display(1,2,3,4,5);
+
+function display(first,second,...restArrguemnets) {
+console.log(first);//1
+console.log(second);//2
+console.log(restArrguemnets);//[3,4,5]
+}
+
+
+
+Date- 9-6-2023
+
+Q- What is the indexOf() Method in Js?
+
+=> indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+
+eg->
+const array = [1,3,4,5,7,8];
+let a = array.indexOf(8)
+console.log(a) //position 5
+
+
+Q- What is the difference between find() and fillter() and Slice() methods of an array in js?
+
+
+FInd:- find() method get the first element that satisfies a given condition.
+
+eg:-
+const array = [1,3,4,5];
+let c = array.find((num)=>{
+
+    num % 2 === 0;
+
+    console.log(c)//2
+})
+
+
+
+filter() Method ->
+
+=> filter() method get an array of elements that satisfies a  condition.
+
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let d = array.filter((num) => {
+    num % 2 === 0;
+    console.log(d)//[2,4,6,8,10]
+})
+
+
+
+
+Slice Method:-
+-> Slice method get a subset of the array from start index to  index (end not included)
+
+const array = ["a", "b", "c", "d","e","f"];
+
+let e = array.slice(2,5); // ["c", "d","e"]
+console.log(e)
+
+
+
+
+Q- What is the difference between push() and concat() methods in js?
+
+=> push() will modify the original array itself
+
+eg- 
+const array = [1, 2, 3, 4, 5];
+
+array.push(6);//[1,2,3,4,5,6]
+
+
+=> concat() will create the new array 
+and not modify the original array
+
+const array = [1, 2, 3, 4, 5];
+
+array.concat(6,7);//[1,2,3,4,5,6,7]
+
+
+
+Q- What is the difference between pop() and shift() methods in js?
+
+=>pop() method removes the last element of the array.
+
+
+const array = [1, 2, 3, 4, 5];
+
+array.pop();
+
+console.log(array);//[1,2,3,4]
+
+
+==> shift() method removes the first element of the array.
+
+const array = [1, 2, 3, 4, 5];
+
+array.shift();
+
+console.log(array);//[2,3,4,5]
+
+
+Q- What is the splice method in js?
+
+=> splice() method is used to add, remove,or replace elements in an array.
+array.splice(start,deleteCount,...itemsToAdd)
+
+let letters = ["a", "b", "c"];
+
+//Add 'x' and 'y' at index 1
+
+letters.splice(1,0,"x","y");//0 for delete
+console.log(letters)//["a","x","y","b","c"]
+
+
+//remove 1 element starting from index 1
+let letterVar = ["a", "b", "c","d];
+
+letterVar.splice(1,1)
+console.log(letterVar)//["a","c","d"]
+
+
+//replace at 2nd index
+
+let fruits = ["apple", "banana", "cherry","lichi"];
+fruits.splice(2, 1, "orange")//2 for index,1 for delete, "orange" for add
+console.log(fruits)
